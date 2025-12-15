@@ -1,0 +1,13 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  env: {
+    NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+    NEXT_PUBLIC_MICROSOFT_CLIENT_ID: process.env.NEXT_PUBLIC_MICROSOFT_CLIENT_ID,
+    NEXT_PUBLIC_MICROSOFT_AUTHORITY: process.env.NEXT_PUBLIC_MICROSOFT_AUTHORITY,
+    NEXT_PUBLIC_MICROSOFT_REDIRECT_URI: process.env.NEXT_PUBLIC_MICROSOFT_REDIRECT_URI,
+  },
+}
+
+module.exports = nextConfig
